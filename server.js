@@ -6,9 +6,13 @@ Deno.serve(async (req) => {
       return new Response(await Deno.readFile("pages/home.html"), {
         headers: { "content-type": "text/html" },
       });
-    } else if (url.pathname === "/components/TodoItem.js") {
-      return new Response(await Deno.readFile("components/TodoItem.js"), {
+    } else if (url.pathname === "/components/Face.js") {
+      return new Response(await Deno.readFile("components/Face.js"), {
         headers: { "content-type": "text/javascript" },
+      });
+    } else if (url.pathname === "/images/pranavPic.png") {
+      return new Response(await Deno.readFile("images/pranavPic.png"), {
+        headers: { "content-type": "image/png" },
       });
     }
   }
