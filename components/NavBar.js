@@ -15,12 +15,12 @@ class NavBar extends HTMLElement {
                 margin: 0;
                 padding: 0;
                 overflow: hidden;
-                background-color: #333;
+                background-color: #3A0CA3;
             }
 
             li {
                 float: left;
-                border-right: 1px solid #bbb;
+                border-right: 1px solid white;
             }
 
             li a {
@@ -32,7 +32,7 @@ class NavBar extends HTMLElement {
             }
 
             li a:hover {
-            background-color: #111;
+                background-color: color-mix(in srgb, #3A0CA3 80%, white);
             }
         </style>
 
