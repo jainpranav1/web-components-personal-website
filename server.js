@@ -25,6 +25,10 @@ Deno.serve(async (req) => {
       return new Response(await Deno.readFile("images/pranavPic.png"), {
         headers: { "content-type": "image/png" },
       });
+    } else if (url.pathname === "/images/space.jpg") {
+      return new Response(await Deno.readFile("images/space.jpg"), {
+        headers: { "content-type": "image/jpg" },
+      });
     }
   }
 
